@@ -94,6 +94,9 @@
         type: Local
         messages: [ "slime-hurt-by-water-popup" ]
         probability: 0.25
+  - type: Body
+    prototype: Slimes
+    requiredLegs: 1
   - type: CombatMode
   - type: MeleeWeapon
     hidden: true
@@ -117,6 +120,7 @@
     makeSentient: true
     name: ghost-role-information-slimes-name
     description: ghost-role-information-slimes-description
+    rules: deltav-ghost-role-information-softantag-rules #DeltaV
   - type: Speech
     speechVerb: Slime
 
@@ -141,8 +145,8 @@
     - type: NpcFactionMember
       factions:
         - SimpleHostile
-    - type: GhostRole
-      description: ghost-role-information-angry-slimes-description
+#    - type: GhostRole #DeltaV - all slimes neutral when ghost role
+#      description: ghost-role-information-angry-slimes-description
 
 - type: entity
   name: green slime
@@ -176,8 +180,8 @@
     - type: NpcFactionMember
       factions:
         - SimpleHostile
-    - type: GhostRole
-      description: ghost-role-information-angry-slimes-description
+#    - type: GhostRole #DeltaV - all slimes neutral when ghost role
+#      description: ghost-role-information-angry-slimes-description
 
 - type: entity
   name: yellow slime
@@ -211,5 +215,5 @@
     - type: NpcFactionMember
       factions:
         - SimpleHostile
-    - type: GhostRole
-      description: ghost-role-information-angry-slimes-description
+#    - type: GhostRole #DeltaV - all slimes neutral when ghost role
+#      description: ghost-role-information-angry-slimes-description
